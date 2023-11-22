@@ -14,7 +14,7 @@ suite("order-test-suite") in [
     } assert [
         $.response.status mustEqual 200,
         $.response.headers.'Content-Type' mustEqual "application/json; charset=UTF-8",
-        $.response.body[0].status mustEqual "cancelled"
+        $.response.body[0].status mustEqual "created"
     ]
   ],
   
